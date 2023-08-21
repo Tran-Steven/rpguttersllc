@@ -1,17 +1,15 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import Header from "@/components/header.tsx";
-import Main from "@/components/main.tsx";
+import styles from "page.module.css";
+import Header from "components/header";
+import Contact from "components/contactheader";
 export default function Home() {
   return (
     <>
       <header>
+        <Contact />
         <Header />
       </header>
-      <main>
-        <Main />
-      </main>
-      <footer></footer>
+      <main>Hi</main>
     </>
   );
 }

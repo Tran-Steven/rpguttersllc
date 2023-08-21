@@ -4,4 +4,3 @@ function main() {
 }
 
 export default main;
-<div></div>;
