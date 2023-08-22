@@ -1,7 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 .wrapper {
   width: 100%;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
+}
+.header_contact_container {
+  background-color: rgb(231, 9, 9);
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+.header_logo_container {
+  width: 3%;
+}
+.phone {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header_contact_text {
+  padding-left: 0.5em;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  word-wrap: break-word;
+  letter-spacing: 2px;
 }

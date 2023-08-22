@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "styles/header.module.css";
+import styles from "styles/listheader.module.css";
 import logo from "assets/logo.png";
 import phone from "assets/phone.svg";
 import Image from "next/image";
@@ -14,10 +14,11 @@ const header = () => {
 
           <div className={styles.header_list_container}>
             <ul className={styles.header_list_ul}>
-              <a>Service</a>
-              <a>Cleaning</a>
-              <a>Repair</a>
-              <a>Replace</a>
+              <a href="#gutter">Gutter Installation</a>
+              <a href="#cleaning">Cleaning</a>
+              <a href="#repair">Repair</a>
+              <a href="#replace">Replace</a>
+              <a href="#aboutus">About Us</a>
             </ul>
           </div>
         </div>

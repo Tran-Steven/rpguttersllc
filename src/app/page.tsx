@@ -1,15 +1,18 @@
 import Image from "next/image";
 import styles from "page.module.css";
-import Header from "components/header";
+import List from "@/components/listheader";
 import Contact from "components/contactheader";
+import Main from "components/main";
 export default function Home() {
   return (
     <>
       <header>
         <Contact />
-        <Header />
+        <List />
       </header>
-      <main>Hi</main>
+      <main>
+        <Main />
+      </main>
     </>
   );
 }
