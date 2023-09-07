@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import styles from "styles/main.module.css";
 import Image from "next/image";
 import background from "assets/crop.jpg";
 import { useState } from "react";
+
 const main = () => {
   const [isSelected, setIsSelected] = useState(true);
   return (
