@@ -2,13 +2,15 @@ import React from "react";
 import styles from "styles/main.module.css";
 import Image from "next/image";
 import background from "assets/crop.jpg";
+import { useState } from "react";
 const main = () => {
+  const [isSelected, setIsSelected] = useState(true);
   return (
     <main>
       <section className={styles.wrapper}>
         <div>
           <div className={styles.heading}>
-            <h2>Services We Provide</h2>
+            <h2>Services</h2>
           </div>
         </div>
         <div>
@@ -16,12 +18,28 @@ const main = () => {
             Gutter Installation
           </div>
           <div>
-            <h3>5’ & 6’ Seamless Gutters</h3>
-            <Image src={background} alt="Image of Seamless Gutters" />
+            <div className={styles.imageheadercontainer}>
+              <button className={styles.imageheader}>
+                <h3>5’ & 6’ Seamless Gutters</h3>
+              </button>
+
+              <button className={styles.imageheader}>
+                <h3>5’ & 6’ Gutter Guards </h3>
+              </button>
+            </div>
+
+            <div className={styles.imagecontainer}>
+              <Image
+                src={background}
+                alt="Image of Seamless Gutters"
+                className={styles.image}
+              />
+            </div>
           </div>
           <div>
-            <h3>5’ & 6’ Gutter Guards </h3>
-            <Image src={background} alt="Image of Gutter Guards" />
+            <div className={styles.imagecontainer}>
+              <Image src={background} alt="Image of Gutter Guards" />
+            </div>
           </div>
         </div>
         <div>

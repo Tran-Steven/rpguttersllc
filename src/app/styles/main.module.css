@@ -15,6 +15,29 @@
   font-weight: 700;
   font-size: 1.3em;
 }
-.background {
+.imageheadercontainer {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 10px 10px 0 0;
+}
+.imageheadercontainer h3 {
+  color: rgb(0, 0, 0);
+}
+.imageheader {
+  border: 3px solid black;
   width: 100%;
+  text-align: center;
+}
+.imagecontainer {
+  width: 70%;
+}
+
+.image {
+  width: 100%;
+  height: 30%;
+  border-radius: 0 0 10px 10px;
 }
