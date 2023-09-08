@@ -5,7 +5,7 @@ import Image from "next/image";
 import background from "assets/crop.jpg";
 import { useState } from "react";
 
-const main = () => {
+const Main = () => {
   const [isSelected, setIsSelected] = useState(true);
   return (
     <main>
@@ -105,4 +105,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;
