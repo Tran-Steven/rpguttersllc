@@ -3,7 +3,7 @@ import styles from "styles/listheader.module.css";
 import logo from "assets/logo.png";
 import phone from "assets/phone.svg";
 import Image from "next/image";
-const header = () => {
+const Header = () => {
   return (
     <>
       <div className={styles.wrapper}>
@@ -27,4 +27,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

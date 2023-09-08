@@ -2,7 +2,7 @@ import React from "react";
 import styles from "styles/contactheader.module.css";
 import phone from "assets/phone.svg";
 import Image from "next/image";
-const contactheader = () => {
+const Contactheader = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.header_contact_container}>
@@ -16,4 +16,4 @@ const contactheader = () => {
     </div>
   );
 };
-export default contactheader;
+export default Contactheader;
