@@ -20,44 +20,42 @@ const Main = () => {
           <div className={styles.heading} id="gutters">
             Gutter Installation
           </div>
-          <div>
-            <div className={styles.imageheadercontainer}>
-              <button
-                className={`${styles.imageheader} ${selectedOption === 'seamless' ? styles.active : styles.inactive}`}
-                onClick={() => setSelectedOption('seamless')}
-                disabled={selectedOption === 'seamless'}
-              >
-                <h3>5’ & 6’ Seamless Gutters</h3>
-              </button>
-              <button
-                className={`${styles.imageheader} ${selectedOption === 'guards' ? styles.active : styles.inactive}`}
-                onClick={() => setSelectedOption('guards')}
-                disabled={selectedOption === 'guards'}
-              >
-                <h3>5’ & 6’ Gutter Guards</h3>
-              </button>
-            </div>
-
-            {selectedOption === 'seamless' && (
-              <div className={styles.imagecontainer}>
-                <Image
-                  src={seamless}
-                  alt="Image of Seamless Gutters"
-                  className={styles.image}
-                />
-              </div>
-            )}
-
-            {selectedOption === 'guards' && (
-              <div className={styles.imagecontainer}>
-                <Image
-                  src={gutter}
-                  alt="Image of Gutter Guards"
-                  className={styles.image}
-                />
-              </div>
-            )}
+          <div className={styles.imageheadercontainer}>
+            <button
+              className={`${styles.imageheader} ${selectedOption === 'seamless' ? styles.active : ''}`}
+              onClick={() => setSelectedOption('seamless')}
+              disabled={selectedOption === 'seamless'}
+            >
+              <h3>5’ & 6’ Seamless Gutters</h3>
+            </button>
+            <button
+              className={`${styles.imageheader} ${selectedOption === 'guards' ? styles.active : ''}`}
+              onClick={() => setSelectedOption('guards')}
+              disabled={selectedOption === 'guards'}
+            >
+              <h3>5’ & 6’ Gutter Guards</h3>
+            </button>
           </div>
+
+          {selectedOption === 'seamless' && (
+            <div className={styles.imagecontainer}>
+              <Image
+                src={seamless}
+                alt="Image of Seamless Gutters"
+                className={styles.image}
+              />
+            </div>
+          )}
+
+          {selectedOption === 'guards' && (
+            <div className={styles.imagecontainer}>
+              <Image
+                src={gutter}
+                alt="Image of Gutter Guards"
+                className={styles.image}
+              />
+            </div>
+          )}
         </div>
         <div>
           <div className={styles.heading} id="cleaning">
