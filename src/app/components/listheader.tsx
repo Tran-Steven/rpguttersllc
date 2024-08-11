@@ -9,7 +9,7 @@ const Header = () => {
       <div className={styles.wrapper}>
         <div className={styles.header_container}>
           <div className={styles.header_logo_container}>
-            <Image src={logo} alt="company logo" className={styles.logo} />
+            <Image src={logo} alt="company logo" className={styles.logo} priority />
           </div>
 
           <div className={styles.header_list_container}>
